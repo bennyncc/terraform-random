@@ -9,7 +9,7 @@ resource "random_id" "random" {
 
 resource "null_resource" "example1" {
   provisioner "local-exec" {
-    command = "ping 35.247.19.101"
+    command = "ping -c1 -p path btest.chickenkiller.com"
   }
 }
 
