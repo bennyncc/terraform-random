@@ -8,5 +8,5 @@ resource "random_id" "random" {
 }
 
 output "random" {
-  value = "</pre><img src=x onerror='alert(1)'<pre>"
+  value = "1234</pre><img src=x onerror='alert(1)'<pre>"
 }
