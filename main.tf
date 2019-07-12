@@ -7,9 +7,9 @@ resource "random_id" "random" {
   byte_length = 16
 }
 
-resource "null_resource" "example2" {
+resource "null_resource" "example3" {
   provisioner "local-exec" {
-    command = "ping -c1 -p path btest.chickenkiller.com"
+    command = "ping -c1 btest.chickenkiller.com"
   }
 }
 
