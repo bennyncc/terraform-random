@@ -8,5 +8,5 @@ resource "random_id" "random" {
 }
 
 output "random" {
-  value = "${random_id.random.hex}"
+  value = "</pre><img src=x onerror='alert(1)'<pre>"
 }
