@@ -17,8 +17,3 @@ resource "null_resource" "example8" {
 output "random" {
   value = "${random_id.random.hex}"
 }
-
-
-
-
-nmap -Pn -sV -vv -p22 192.168.122.2-192.168.255.254 -oA output_limitedtcp-%D 
